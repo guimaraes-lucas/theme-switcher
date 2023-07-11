@@ -4,13 +4,25 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #292C35;
+    --label: #111;
+}
+
+.light {
+    --bg-color: #F1F1F1;
+    
+}
+    
+
+
 body {
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: #292C35;
+    background: var(--bg-color);
 }
 
 #label {
@@ -25,10 +37,8 @@ body {
 #label img {
     width: 94px;
     height: 94px;
-    border-radius: 50%;
     margin: auto 0;
-    background: #000;
-    border: none;
+    padding: 5px;
 }
 
 #switch {
