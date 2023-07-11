@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #292C35;
+}
+
+#label {
+    display: flex;
+    width: 235px;
+    height: 102px;
+    border-radius: 59px;
+    background: #000;
+    justify-content: space-between;
+}
+
+#label img {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    margin: auto 0;
+    background: #000;
+    border: none;
+}
+
+#switch {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    position: absolute;
+    display: none;
+}
