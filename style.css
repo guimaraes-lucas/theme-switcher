@@ -18,25 +18,31 @@
 
 body {
     display: flex;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
     background: var(--bg-color);
 }
 
 #label {
     display: flex;
+    position: relative;
+    justify-content: space-between;
+
     width: 235px;
     height: 102px;
     border-radius: 59px;
+
     background: #000;
-    justify-content: space-between;
 }
 
 #label img {
     width: 94px;
     height: 94px;
+
     margin: auto 0;
     border-radius: 50%;
     padding: 5px;
@@ -46,19 +52,22 @@ body {
     width: 86px;
     height: 86px;
     border-radius: 50%;
+
     position: absolute;
     top:50%;
     left: 1;
     transform: translateY(-50%);
+    z-index: 1;
     margin: 0 8px;
 
     
-    animation: slide-out 1s forwards;
+    animation: slide-out .4s forwards;
 }
 
 .light #switch {
-    animation: slide-in 1s forwards;
+    animation: slide-in .4s forwards;
 }
+
 
 @keyframes slide-in {
     from {
@@ -66,13 +75,13 @@ body {
     }
         
     to {
-        left: 51.9%;
+        left: 57%;
     }
 }
 
 @keyframes slide-out {
     from {
-        left: 51.9%;
+        left: 57%;
     }
 
     to {
